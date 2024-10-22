@@ -35,7 +35,7 @@
 		AD6C6A83295401050079516D /* ViewController+CoreMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreMotion.swift"; sourceTree = "<group>"; };
 		AD9EA280293B0CAF0079F1B4 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
 		ADA4699026EB27CB008B1C7B /* libdiy_rpg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libdiy_rpg.h; sourceTree = "<group>"; };
-		ADA4699226EB2F9A008B1C7B /* diy_rpg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bevy_in_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADA4699226EB2F9A008B1C7B /* diy_rpg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "diy_rpg-Bridging-Header.h"; sourceTree = "<group>"; };
 		ADC0D0EF295161DA00388970 /* libdiy_rpg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiy_rpg.a; path = libs/debug/libdiy_rpg.a; sourceTree = "<group>"; };
 		ADC0D0F1295172CA00388970 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */

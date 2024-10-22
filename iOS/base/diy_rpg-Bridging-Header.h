@@ -1,13 +1,13 @@
 //
-//  bevy_in_iOS-Bridging-Header.h
-//  bevy_in_iOS
+//  diy_rpg-Bridging-Header.h
+//  diy_rpg
 //
 //  Created by Jinlei Li on 2022/12/20.
 //
 
-#ifndef bevy_in_iOS_Bridging_Header_h
-#define bevy_in_iOS_Bridging_Header_h
+#ifndef diy_rpg_Bridging_Header_h
+#define diy_rpg_Bridging_Header_h
 
 #import "libdiy_rpg.h"
 
-#endif /* bevy_in_iOS_Bridging_Header_h */
+#endif /* diy_rpg_Bridging_Header_h */
