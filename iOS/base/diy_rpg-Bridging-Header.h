@@ -8,6 +8,6 @@
 #ifndef bevy_in_iOS_Bridging_Header_h
 #define bevy_in_iOS_Bridging_Header_h
 
-#import "libbevy_in_app.h"
+#import "libdiy_rpg.h"
 
 #endif /* bevy_in_iOS_Bridging_Header_h */

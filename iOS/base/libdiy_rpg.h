@@ -1,12 +1,12 @@
 //
-//  libbevy_in_app.h
+//  libdiy_rpg.h
 //  bevy_in_iOS
 //
 //  Created by Jinlei Li on 2022/12/20.
 //
 
-#ifndef libbevy_in_app_h
-#define libbevy_in_app_h
+#ifndef libdiy_rpg_h
+#define libdiy_rpg_h
 
 #include <stdint.h>
 
@@ -28,4 +28,4 @@ void gyroscope_motion(struct bevy_app *app, float x, float y, float z);
 void accelerometer_motion(struct bevy_app *app, float x, float y, float z);
 void device_motion(struct bevy_app *app, float x, float y, float z);
 
-#endif /* libbevy_in_app_h */
+#endif /* libdiy_rpg_h */

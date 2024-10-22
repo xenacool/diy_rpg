@@ -323,28 +323,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "bevy-in-app"
-version = "0.3.0"
-dependencies = [
- "android_logger",
- "bevy",
- "bevy_tasks",
- "core-graphics",
- "jni 0.21.1",
- "jni_fn",
- "libc",
- "log",
- "log-panics",
- "ndk 0.7.0",
- "ndk-context",
- "ndk-sys 0.4.1+23.1.7779620",
- "objc",
- "raw-window-handle 0.6.1",
- "uuid",
- "wgpu",
-]
-
-[[package]]
 name = "bevy_a11y"
 version = "0.14.0-dev"
 source = "git+https://github.com/bevyengine/bevy?rev=ec01c2dc4562adb979cf5497a48b53efa8250901#ec01c2dc4562adb979cf5497a48b53efa8250901"
@@ -1509,6 +1487,28 @@ name = "dispatch"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bd0c93bb4b0c6d9b77f4435b0ae98c24d17f1c45b2ff844c6151a07256ca923b"
+
+[[package]]
+name = "diy-rpg"
+version = "0.3.0"
+dependencies = [
+ "android_logger",
+ "bevy",
+ "bevy_tasks",
+ "core-graphics",
+ "jni 0.21.1",
+ "jni_fn",
+ "libc",
+ "log",
+ "log-panics",
+ "ndk 0.7.0",
+ "ndk-context",
+ "ndk-sys 0.4.1+23.1.7779620",
+ "objc",
+ "raw-window-handle 0.6.1",
+ "uuid",
+ "wgpu",
+]
 
 [[package]]
 name = "dlib"

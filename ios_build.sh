@@ -17,11 +17,11 @@ fi
 
 cargo build --target ${TARGET} ${RELEASE_MODE}
 
-# Copy libbevy_in_app.a to iOS project
+# Copy libdiy_rpg.a to iOS project
 # 
 # Why copy?
 # On Xcode 14.1, when xxx..dylib file exists in the library search path, Xcode will try to reference it and report an error:
-# Dylib (/Users/XXX/bevy-in-app/target/aarch64-apple-ios/debug/libbevy_in_app.dylib) was built for newer iOS version (16.1) than being linked (13.0)
+# Dylib (/Users/XXX/bevy-in-app/target/aarch64-apple-ios/debug/libdiy_rpg.dylib) was built for newer iOS version (16.1) than being linked (13.0)
 
 LIB_FOLDER=
 case ${RELEASE_MODE} in
@@ -33,4 +33,4 @@ if [ ! -d "iOS/libs/${LIB_FOLDER}/" ]; then
   mkdir -p "iOS/libs/${LIB_FOLDER}"
 fi
 
-cp target/${TARGET}/${LIB_FOLDER}/libbevy_in_app.a iOS/libs/${LIB_FOLDER}/libbevy_in_app.a
+cp target/${TARGET}/${LIB_FOLDER}/libdiy_rpg.a iOS/libs/${LIB_FOLDER}/libdiy_rpg.a

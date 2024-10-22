@@ -1,5 +1,5 @@
 [package]
-name = "bevy-in-app"
+name = "diy-rpg"
 version = "0.3.0"
 authors = ["jinleili"]
 edition = "2021"

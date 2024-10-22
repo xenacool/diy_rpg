@@ -17,7 +17,7 @@ pub fn android_main(_android_app: bevy::winit::android_activity::AndroidApp) {
     // `android_main` empty function is currently required, otherwise, a panic will occur:
     //
     // java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "android_main"
-    // referenced by "/data/app/~~hebB-d3x4YdYjuFlqiJT3w==/name.jinleili.bevy.debug-j2uCKW7h8U7-_YzEOO48Dg==/base.apk!/lib/arm64-v8a/libbevy_in_app.so"...
+    // referenced by "/data/app/~~hebB-d3x4YdYjuFlqiJT3w==/name.jinleili.bevy.debug-j2uCKW7h8U7-_YzEOO48Dg==/base.apk!/lib/arm64-v8a/libdiy_rpg.so"...
 }
 
 #[no_mangle]

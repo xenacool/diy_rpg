@@ -10,7 +10,7 @@ import CoreMotion
 extension ViewController {
     func startGyroUpdates() {
         if !motionManager.isGyroAvailable {
-            print("陀螺仪不可用")
+            print("gyro is not available")
             return
         }
         if motionManager.isGyroActive {
@@ -22,7 +22,6 @@ extension ViewController {
                 print("startGyroUpdates error: \(error!)")
                 return
             }
-            // 获取陀螺仪数据
             self.rotationRate = gyroData.rotationRate
         }
     }
@@ -33,7 +32,7 @@ extension ViewController {
     
     func startAccelerometerUpdates() {
         if !motionManager.isAccelerometerAvailable {
-            print("加速计不可用")
+            print("Accelerometer is not available")
             return
         }
         if motionManager.isAccelerometerActive {
@@ -59,7 +58,6 @@ extension ViewController {
                 print("startDeviceMotionUpdates error: \(error!)")
                 return
             }
-            // Gravity 获取重力值在各个方向上的分量，根据这个就可以获得手机的空间位置，倾斜角度等
             self.gravity = deviceMotion.gravity
         }
     }

@@ -6,7 +6,7 @@ import android.content.res.AssetManager
 
 class RustBridge {
     init {
-        System.loadLibrary("bevy_in_app")
+        System.loadLibrary("diy_rpg")
     }
 
     external fun init_ndk_context(ctx: Context)

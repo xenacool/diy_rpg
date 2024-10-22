@@ -22,4 +22,4 @@ if [ ! -d "$ARMv7a" ]; then
     mkdir "$ARMv7a"
 fi
 
-cp target/aarch64-linux-android/${LIB_FOLDER}/libbevy_in_app.so "${ARM64}/libbevy_in_app.so"
+cp target/aarch64-linux-android/${LIB_FOLDER}/libdiy_rpg.so "${ARM64}/libdiy_rpg.so"

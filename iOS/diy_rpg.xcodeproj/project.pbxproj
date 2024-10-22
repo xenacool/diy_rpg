@@ -17,12 +17,12 @@
 		AD6C6A82295400160079516D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6C6A81295400160079516D /* CoreMotion.framework */; };
 		AD6C6A84295401050079516D /* ViewController+CoreMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6C6A83295401050079516D /* ViewController+CoreMotion.swift */; };
 		AD9EA281293B0CAF0079F1B4 /* libs in Resources */ = {isa = PBXBuildFile; fileRef = AD9EA280293B0CAF0079F1B4 /* libs */; };
-		ADC0D0F0295161DA00388970 /* libbevy_in_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0D0EF295161DA00388970 /* libbevy_in_app.a */; };
+		ADC0D0F0295161DA00388970 /* libdiy_rpg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0D0EF295161DA00388970 /* libdiy_rpg.a */; };
 		ADC0D0F2295172CA00388970 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0D0F1295172CA00388970 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD4B1FE926EB1B90008A6AEE /* bevy_in_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bevy_in_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4B1FE926EB1B90008A6AEE /* diy_rpg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diy_rpg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4B1FEC26EB1B90008A6AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4B1FF026EB1B90008A6AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD4B1FF326EB1B90008A6AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,9 +34,9 @@
 		AD6C6A81295400160079516D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		AD6C6A83295401050079516D /* ViewController+CoreMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreMotion.swift"; sourceTree = "<group>"; };
 		AD9EA280293B0CAF0079F1B4 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
-		ADA4699026EB27CB008B1C7B /* libbevy_in_app.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libbevy_in_app.h; sourceTree = "<group>"; };
-		ADA4699226EB2F9A008B1C7B /* bevy_in_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bevy_in_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		ADC0D0EF295161DA00388970 /* libbevy_in_app.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbevy_in_app.a; path = libs/debug/libbevy_in_app.a; sourceTree = "<group>"; };
+		ADA4699026EB27CB008B1C7B /* libdiy_rpg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libdiy_rpg.h; sourceTree = "<group>"; };
+		ADA4699226EB2F9A008B1C7B /* diy_rpg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bevy_in_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADC0D0EF295161DA00388970 /* libdiy_rpg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdiy_rpg.a; path = libs/debug/libdiy_rpg.a; sourceTree = "<group>"; };
 		ADC0D0F1295172CA00388970 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC0D0F0295161DA00388970 /* libbevy_in_app.a in Frameworks */,
+				ADC0D0F0295161DA00388970 /* libdiy_rpg.a in Frameworks */,
 				AD6C6A82295400160079516D /* CoreMotion.framework in Frameworks */,
 				ADC0D0F2295172CA00388970 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -59,9 +59,9 @@
 			children = (
 				AD4B1FF026EB1B90008A6AEE /* ViewController.swift */,
 				AD6C6A83295401050079516D /* ViewController+CoreMotion.swift */,
-				ADA4699026EB27CB008B1C7B /* libbevy_in_app.h */,
+				ADA4699026EB27CB008B1C7B /* libdiy_rpg.h */,
 				AD4B200026EB1D31008A6AEE /* MetalView.swift */,
-				ADA4699226EB2F9A008B1C7B /* bevy_in_iOS-Bridging-Header.h */,
+				ADA4699226EB2F9A008B1C7B /* diy_rpg-Bridging-Header.h */,
 				AD4B1FEC26EB1B90008A6AEE /* AppDelegate.swift */,
 				AD4B1FF226EB1B90008A6AEE /* Main.storyboard */,
 				AD4B1FF526EB1B91008A6AEE /* Assets.xcassets */,
@@ -75,7 +75,7 @@
 				AD6712AE2A6211F300CAA248 /* assets */,
 				AD9EA280293B0CAF0079F1B4 /* libs */,
 				AD0CB7E127A4061E0041811B /* base */,
-				AD4B1FEB26EB1B90008A6AEE /* bevy_in_iOS */,
+				AD4B1FEB26EB1B90008A6AEE /* diy_rpg */,
 				AD4B1FEA26EB1B90008A6AEE /* Products */,
 				ADA4699326EB3079008B1C7B /* Frameworks */,
 			);
@@ -84,18 +84,18 @@
 		AD4B1FEA26EB1B90008A6AEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD4B1FE926EB1B90008A6AEE /* bevy_in_iOS.app */,
+				AD4B1FE926EB1B90008A6AEE /* diy_rpg.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD4B1FEB26EB1B90008A6AEE /* bevy_in_iOS */ = {
+		AD4B1FEB26EB1B90008A6AEE /* diy_rpg */ = {
 			isa = PBXGroup;
 			children = (
 				AD4B1FF726EB1B91008A6AEE /* LaunchScreen.storyboard */,
 				AD4B1FFA26EB1B91008A6AEE /* Info.plist */,
 			);
-			path = bevy_in_iOS;
+			path = diy_rpg;
 			sourceTree = "<group>";
 		};
 		ADA4699326EB3079008B1C7B /* Frameworks */ = {
@@ -103,7 +103,7 @@
 			children = (
 				AD6C6A81295400160079516D /* CoreMotion.framework */,
 				ADC0D0F1295172CA00388970 /* AudioToolbox.framework */,
-				ADC0D0EF295161DA00388970 /* libbevy_in_app.a */,
+				ADC0D0EF295161DA00388970 /* libdiy_rpg.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD4B1FE826EB1B90008A6AEE /* bevy_in_iOS */ = {
+		AD4B1FE826EB1B90008A6AEE /* diy_rpg */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD4B1FFD26EB1B91008A6AEE /* Build configuration list for PBXNativeTarget "bevy_in_iOS" */;
+			buildConfigurationList = AD4B1FFD26EB1B91008A6AEE /* Build configuration list for PBXNativeTarget "diy_rpg" */;
 			buildPhases = (
 				AD4B1FE526EB1B90008A6AEE /* Sources */,
 				AD4B1FE626EB1B90008A6AEE /* Frameworks */,
@@ -123,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = bevy_in_iOS;
+			name = diy_rpg;
 			productName = wgpu_test;
-			productReference = AD4B1FE926EB1B90008A6AEE /* bevy_in_iOS.app */;
+			productReference = AD4B1FE926EB1B90008A6AEE /* diy_rpg.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,15 +134,16 @@
 		AD4B1FE126EB1B90008A6AEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					AD4B1FE826EB1B90008A6AEE = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = AD4B1FE426EB1B90008A6AEE /* Build configuration list for PBXProject "bevy_in_iOS" */;
+			buildConfigurationList = AD4B1FE426EB1B90008A6AEE /* Build configuration list for PBXProject "diy_rpg" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD4B1FE826EB1B90008A6AEE /* bevy_in_iOS */,
+				AD4B1FE826EB1B90008A6AEE /* diy_rpg */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +247,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -307,6 +309,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -333,8 +336,8 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = P3HQ9GDFCW;
-				INFOPLIST_FILE = bevy_in_iOS/Info.plist;
+				DEVELOPMENT_TEAM = 97F7F5Z257;
+				INFOPLIST_FILE = diy_rpg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,18 +345,18 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/libs/debug",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/libs/debug/**",
+					"$(PROJECT_DIR)/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lijinlei.zixi.bevy-in-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseract.diyrpg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "base/bevy_in_iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "base/diy_rpg-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -367,8 +370,8 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = P3HQ9GDFCW;
-				INFOPLIST_FILE = bevy_in_iOS/Info.plist;
+				DEVELOPMENT_TEAM = 97F7F5Z257;
+				INFOPLIST_FILE = diy_rpg/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,19 +379,19 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/libs/release",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/libs/debug",
+					"$(PROJECT_DIR)/libs/release/**",
+					"$(PROJECT_DIR)/**",
+					"$(PROJECT_DIR)/libs/debug/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lijinlei.zixi.bevy-in-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesseract.diyrpg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "base/bevy_in_iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "base/diy_rpg-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -397,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD4B1FE426EB1B90008A6AEE /* Build configuration list for PBXProject "bevy_in_iOS" */ = {
+		AD4B1FE426EB1B90008A6AEE /* Build configuration list for PBXProject "diy_rpg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD4B1FFB26EB1B91008A6AEE /* Debug */,
@@ -406,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD4B1FFD26EB1B91008A6AEE /* Build configuration list for PBXNativeTarget "bevy_in_iOS" */ = {
+		AD4B1FFD26EB1B91008A6AEE /* Build configuration list for PBXNativeTarget "diy_rpg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD4B1FFE26EB1B91008A6AEE /* Debug */,
