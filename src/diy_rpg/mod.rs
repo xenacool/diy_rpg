@@ -32,7 +32,7 @@ fn read_touches(asset_server: Res<AssetServer>, mut tags: Query<(&mut Text, &mut
     let mut buffer: Vec<String> = vec![];
     for finger in touches.iter() {
         let displacement = finger.position() - finger.start_position();
-        buffer.push(format!("{} {} {}", finger.id(), displacement.x, displacement.y));
+        buffer.push(format!("{} {:.3}", finger.id(), displacement.length()));
     }
     if buffer.len() > 0 && text.sections.len() > 0 {
         let result = buffer.join("\n");
