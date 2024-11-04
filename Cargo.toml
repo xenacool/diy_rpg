@@ -30,6 +30,7 @@ bevy = { git = "https://github.com/bevyengine/bevy", rev = "ec01c2dc4562adb979cf
     "bevy_debug_stepping",
 ], default-features = false }
 bevy_tasks = { git = "https://github.com/bevyengine/bevy", rev = "ec01c2dc4562adb979cf5497a48b53efa8250901" }
+bevy_sprite3d = { version = "3.0.0" }
 uuid = { version = "1.7.0", features = ["v4"] }
 log = "0.4"
 

@@ -16,15 +16,13 @@ pub fn create_bevy_app(view: *mut objc::runtime::Object, scale_factor: f32) -> *
 
     create_bevy_window(&mut bevy_app);
 
-    info!("Bevy App created!");
+    info!("DIY RPG created!");
     let box_obj = Box::new(bevy_app);
-    // into_raw 返回指针的同时，将此对象的内存管理权转交给调用方
     Box::into_raw(box_obj) as *mut libc::c_void
 }
 
 #[no_mangle]
 pub fn enter_frame(obj: *mut libc::c_void) {
-    // 获取到指针指代的 Rust 对象的可变借用
     let app = unsafe { &mut *(obj as *mut App) };
     app.update();
 }
@@ -93,7 +91,6 @@ pub fn device_motion(obj: *mut libc::c_void, x: f32, _y: f32, _z: f32) {
 
 #[no_mangle]
 pub fn release_bevy_app(obj: *mut libc::c_void) {
-    // 将指针转换为其指代的实际 Rust 对象，同时也拿回此对象的内存管理权
     let app: Box<App> = unsafe { Box::from_raw(obj as *mut _) };
     crate::close_bevy_window(app);
 }

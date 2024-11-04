@@ -87,8 +87,9 @@ fn initialized(state: Res<State>) -> bool {
 
 const FONT_SIZE: f32 = 20.0;
 const FONT_COLOR: Color = Color::srgb(0.2, 0.2, 0.2);
-const FONT_BOLD: &str = "fonts/FiraSans-Bold.ttf";
-const FONT_MEDIUM: &str = "fonts/FiraMono-Medium.ttf";
+const FONT_BOLD: &str = "fonts/Spectral/Spectral-SemiBold.ttf";
+
+const FONT_MEDIUM: &str = "fonts/Karla/Karla-VariableFont_wght.ttf";
 
 #[derive(Component)]
 struct SteppingUi;
@@ -190,7 +191,7 @@ fn build_stepping_hint(mut commands: Commands, asset_server: Res<AssetServer>) {
     let hint_text = if cfg!(feature = "bevy_debug_stepping") {
         "Press ` to toggle stepping mode (S: step system, Space: step frame)"
     } else {
-        "Bevy was compiled without stepping support. Run with `--features=bevy_debug_stepping` to enable stepping."
+        "Run with `--features=bevy_debug_stepping` to enable stepping."
     };
     info!("{}", hint_text);
     // stepping description box

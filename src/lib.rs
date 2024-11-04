@@ -22,6 +22,7 @@ pub use ffi::*;
 #[cfg(target_os = "android")]
 mod android_asset_io;
 
+mod diy_rpg;
 mod breakout_game;
 mod lighting_demo;
 mod shapes_demo;
@@ -84,7 +85,8 @@ pub fn create_breakout_app(
     #[cfg(any(target_os = "android", target_os = "ios"))]
     bevy_app.add_plugins(app_view::AppViewPlugin);
 
-    bevy_app.add_plugins(breakout_game::BreakoutGamePlugin);
+    bevy_app.add_plugins(diy_rpg::DiyRpgGamePlugin);
+    // bevy_app.add_plugins(breakout_game::BreakoutGamePlugin);
     // bevy_app.add_plugins(lighting_demo::LightingDemoPlugin);
     // bevy_app.add_plugins(shapes_demo::ShapesDemoPlugin);
 

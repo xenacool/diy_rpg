@@ -12,8 +12,8 @@ This repository implements such a scenario and uses the phone's motion sensor to
 
 ## Screenshot
 
-| ![Bevy in iOS App](assets/bevy_in_ios.png) | ![Bevy in Android App](assets/bevy_in_android.png) |
-| ------------------------------------------ | -------------------------------------------------- |
+[//]: # (| ![Bevy in iOS App]&#40;assets/bevy_in_ios.png&#41; | ![Bevy in Android App]&#40;assets/bevy_in_android.png&#41; |)
+[//]: # (| ------------------------------------------ | -------------------------------------------------- |)
 
 ## **iOS**
 
