@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adl-sn-BgH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="4864" identifier="iOS"/>
@@ -9,16 +9,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Edit Game-->
+        <scene sceneID="aZ8-eM-Gg0">
+            <objects>
+                <viewController id="xfc-LR-lhW" customClass="TextEditorViewController" customModule="diy_rpg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rkg-lU-prw" customClass="UITextView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIY RPG Text Editor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mj-O6-Uzg">
+                                <rect key="frame" x="132" y="48" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lPf-W7-VYk"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="7mj-O6-Uzg" firstAttribute="top" secondItem="lPf-W7-VYk" secondAttribute="top" id="aDW-0g-hyJ"/>
+                            <constraint firstItem="7mj-O6-Uzg" firstAttribute="centerX" secondItem="rkg-lU-prw" secondAttribute="centerX" id="cSN-Ks-ZNA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Edit Game" image="gear.png" selectedImage="gear.png" id="Na0-QX-q0k" userLabel="Label"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2k-W4-4T3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-579"/>
+        </scene>
+        <!--Play Local-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="diy_rpg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="diy_rpg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIY RPG App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOo-xX-hpl">
-                                <rect key="frame" x="132.5" y="48" width="149" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIY RPG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOo-xX-hpl" userLabel="DIY RPG">
+                                <rect key="frame" x="168" y="48" width="78.5" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="FEd-wX-ds2"/>
                                 </constraints>
@@ -27,10 +55,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tr-8o-p79">
-                                <rect key="frame" x="0.0" y="100" width="414" height="702"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="653"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHv-L9-Ngy" customClass="MetalView" customModule="diy_rpg" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="702"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="653"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
@@ -43,7 +71,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="lNf-VF-2kI">
-                                <rect key="frame" x="107" y="810" width="200" height="44"/>
+                                <rect key="frame" x="107" y="761" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="N7c-yG-lPa"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="umy-m3-Kfr"/>
@@ -72,24 +100,50 @@
                             <constraint firstItem="lNf-VF-2kI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sBQ-k2-sux"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Play Local" image="gamepad.png" selectedImage="gamepad.png" id="HsL-x0-zVm" userLabel="Label">
+                        <attributedString key="userComments">
+                            <fragment content="lol"/>
+                        </attributedString>
+                    </tabBarItem>
                     <connections>
                         <outlet property="metalV" destination="bHv-L9-Ngy" id="4Ec-li-5S7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="93.75"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nsh-rT-XG4">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="adl-sn-BgH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e4o-hJ-glH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3rO-oi-gAN"/>
+                        <segue destination="xfc-LR-lhW" kind="relationship" relationship="viewControllers" id="PfA-hk-8NE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPe-Kg-trw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="44.927536231884062" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gamepad.png" width="50" height="50"/>
+        <image name="gear.png" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

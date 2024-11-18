@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D27B5AF2CE5A3C10027A6CB /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D27B5AE2CE5A3C10027A6CB /* Network.framework */; };
+		3D27B5B12CE5A9570027A6CB /* TextEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27B5B02CE5A94D0027A6CB /* TextEditorViewController.swift */; };
+		3D606EF72CEB6BF4005A2189 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D606EF62CEB6BF4005A2189 /* CoreGraphics.framework */; };
 		AD4B1FED26EB1B90008A6AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B1FEC26EB1B90008A6AEE /* AppDelegate.swift */; };
 		AD4B1FF126EB1B90008A6AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B1FF026EB1B90008A6AEE /* ViewController.swift */; };
 		AD4B1FF426EB1B90008A6AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4B1FF226EB1B90008A6AEE /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D27B5AE2CE5A3C10027A6CB /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Network.framework; sourceTree = DEVELOPER_DIR; };
+		3D27B5B02CE5A94D0027A6CB /* TextEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorViewController.swift; sourceTree = "<group>"; };
+		3D606EF62CEB6BF4005A2189 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		AD4B1FE926EB1B90008A6AEE /* diy_rpg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diy_rpg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4B1FEC26EB1B90008A6AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4B1FF026EB1B90008A6AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +52,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC0D0F0295161DA00388970 /* libdiy_rpg.a in Frameworks */,
+				3D606EF72CEB6BF4005A2189 /* CoreGraphics.framework in Frameworks */,
 				AD6C6A82295400160079516D /* CoreMotion.framework in Frameworks */,
 				ADC0D0F2295172CA00388970 /* AudioToolbox.framework in Frameworks */,
+				3D27B5AF2CE5A3C10027A6CB /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +65,7 @@
 		AD0CB7E127A4061E0041811B /* base */ = {
 			isa = PBXGroup;
 			children = (
+				3D27B5B02CE5A94D0027A6CB /* TextEditorViewController.swift */,
 				AD4B1FF026EB1B90008A6AEE /* ViewController.swift */,
 				AD6C6A83295401050079516D /* ViewController+CoreMotion.swift */,
 				ADA4699026EB27CB008B1C7B /* libdiy_rpg.h */,
@@ -101,6 +110,8 @@
 		ADA4699326EB3079008B1C7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D606EF62CEB6BF4005A2189 /* CoreGraphics.framework */,
+				3D27B5AE2CE5A3C10027A6CB /* Network.framework */,
 				AD6C6A81295400160079516D /* CoreMotion.framework */,
 				ADC0D0F1295172CA00388970 /* AudioToolbox.framework */,
 				ADC0D0EF295161DA00388970 /* libdiy_rpg.a */,
@@ -183,6 +194,7 @@
 			files = (
 				AD4B200126EB1D32008A6AEE /* MetalView.swift in Sources */,
 				AD4B1FF126EB1B90008A6AEE /* ViewController.swift in Sources */,
+				3D27B5B12CE5A9570027A6CB /* TextEditorViewController.swift in Sources */,
 				AD4B1FED26EB1B90008A6AEE /* AppDelegate.swift in Sources */,
 				AD6C6A84295401050079516D /* ViewController+CoreMotion.swift in Sources */,
 			);
@@ -338,6 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 97F7F5Z257;
 				INFOPLIST_FILE = diy_rpg/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -372,6 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 97F7F5Z257;
 				INFOPLIST_FILE = diy_rpg/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (

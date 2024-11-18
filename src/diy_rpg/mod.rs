@@ -1,6 +1,7 @@
 use std::ops::Mul;
+use bevy::asset::Assets;
 use bevy::math::Vec2;
-use bevy::prelude::{default, App, AssetServer, Camera2dBundle, ClearColor, Color, Commands, Component, FixedUpdate, Plugin, PositionType, Query, Res, Startup, Style, Text, TextBundle, TextSection, TextStyle, Touches, Update, Val, Vec3};
+use bevy::prelude::{default, App, AssetServer, Camera2dBundle, ClearColor, Color, Commands, Component, Cuboid, FixedUpdate, Mesh, PbrBundle, Plugin, PositionType, Query, Res, ResMut, StandardMaterial, Startup, Style, Text, TextBundle, TextSection, TextStyle, Touches, Transform, Update, Val, Vec3};
 use bevy::reflect::List;
 use crate::stepping::SteppingPlugin;
 
@@ -52,7 +53,7 @@ fn read_touches(asset_server: Res<AssetServer>, mut tags: Query<(&mut Text, &mut
 #[derive(Component)]
 struct TouchTag;
 
-fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
+fn setup(mut commands: Commands, mut meshes: ResMut<Assets<Mesh>>, mut materials: ResMut<Assets<StandardMaterial>>, asset_server: Res<AssetServer>) {
     commands.spawn(TextBundle::from_sections([
         TextSection::new("Do it yourself: Role Playing Game",
                          TextStyle {

@@ -8,7 +8,7 @@
 import UIKit
 import CoreMotion
 
-class ViewController: UIViewController {
+class MyViewController: UIViewController {
     @IBOutlet var metalV: MetalView!
     var bevyApp: OpaquePointer?
     

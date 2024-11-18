@@ -7,7 +7,7 @@
 
 import CoreMotion
 
-extension ViewController {
+extension MyViewController {
     func startGyroUpdates() {
         if !motionManager.isGyroAvailable {
             print("gyro is not available")

@@ -16,7 +16,7 @@ bevy_debug_stepping = ["bevy/bevy_debug_stepping"]
 libc = "*"
 raw-window-handle = "0.6"
 wgpu = "0.19"
-bevy = { git = "https://github.com/bevyengine/bevy", rev = "ec01c2dc4562adb979cf5497a48b53efa8250901", features = [
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "5c759a1be800209f537bea31d32b8ba7e966b0c1", features = [
     # bevy = { path = "../bevy", features = [
     "bevy_audio",
     "bevy_sprite",
@@ -29,10 +29,9 @@ bevy = { git = "https://github.com/bevyengine/bevy", rev = "ec01c2dc4562adb979cf
     "png",
     "bevy_debug_stepping",
 ], default-features = false }
-bevy_tasks = { git = "https://github.com/bevyengine/bevy", rev = "ec01c2dc4562adb979cf5497a48b53efa8250901" }
+bevy_tasks = { git = "https://github.com/bevyengine/bevy", rev = "5c759a1be800209f537bea31d32b8ba7e966b0c1" }
 bevy_sprite3d = { version = "3.0.0" }
 simple-mdns = "0.6.2"
-bevy_mod_picking = { version = "0.20.1", features = ["backend_bevy_ui", "backend_raycast", "backend_avian"] }
 uuid = { version = "1.7.0", features = ["v4"] }
 log = "0.4"
 

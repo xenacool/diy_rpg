@@ -23,13 +23,10 @@ pub use ffi::*;
 mod android_asset_io;
 
 mod diy_rpg;
-mod breakout_game;
-mod lighting_demo;
-mod shapes_demo;
 mod stepping;
 
 #[allow(unused_variables)]
-pub fn create_breakout_app(
+pub fn create_bevy_app(
     #[cfg(target_os = "android")] android_asset_manager: android_asset_io::AndroidAssetManager,
 ) -> App {
     #[allow(unused_imports)]
